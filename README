@@ -4,25 +4,25 @@ and to improve usability.
 
 go, godoc, gofmt
 	Executes corresponding command with GOROOT and GOPATH set.
-	If there is a version number specified as a first argument 
+	If there is a version number specified as a first argument
 	then corresponding version of the compiler is chosen instead
 	of the default one.
 
 	Each command expects compiler to reside in the upper level
 	directory relative to it and with the version number in its
 	name. For example:
-	
+
 	    bin/
 	    go1.3.3/
 	    go1.4.2/
 
-	GOPATH is set to the current or closest upper level directory 
+	GOPATH is set to the current or closest upper level directory
 	that contains src/. This way it is possible to work with the
 	workspace from within its subdirectories. If no src/ directory
 	is found, then GOPATH is set to current working directory.
 
 	Example:
-	
+
 	    # runs foo.go under go1.3.3
 	    go 1.3.3 run foo.go
 
