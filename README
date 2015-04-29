@@ -1,6 +1,10 @@
 
-Wrappers for go to support multiple go releases, cross-compilation
-and to improve usability.
+NAME
+	go-wrappers - set of wrappers for go
+
+DESCRIPTION
+	Wrappers for go to support multiple Go releases,
+	cross-compilation and to improve usability.
 
 go, godoc, gofmt
 	Executes corresponding command with GOROOT and GOPATH set.
@@ -39,4 +43,13 @@ gox
 	    gox build -o foo foo.go
 	    gox 1.4.2 build -o foo142 foo.go
 
+
+AUTHOR
+	Alexandr Gomoliako <zzz@zzz.org.ua>
+
+LICENSE
+	Copyright 2015 Alexandr Gomoliako. All rights reserved.
+
+	This is free software. It may be used, redistributed and/or
+	modified under the terms described in LICENSE file.
 
