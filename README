@@ -1,12 +1,13 @@
 
 NAME
-	go-wrappers - set of wrappers for go
+    go-wrappers - set of wrappers for go
 
 DESCRIPTION
-	Wrappers for go to support multiple Go releases,
-	cross-compilation and to improve usability.
+    Wrappers for go to support multiple Go release version,
+    cross-compilation and to improve usability.
 
-go, godoc, gofmt
+WRAPPERS
+    go, godoc, gofmt
 	Executes corresponding command with GOROOT and GOPATH set.
 	If there is a version number specified as a first argument
 	then corresponding version of the compiler is chosen instead
@@ -20,10 +21,11 @@ go, godoc, gofmt
 	    go1.3.3/
 	    go1.4.2/
 
-	GOPATH is set to the current or closest upper level directory
-	that contains src/. This way it is possible to work with the
-	workspace from within its subdirectories. If no src/ directory
-	is found, then GOPATH is set to current working directory.
+	GOPATH is set to the current working or closest upper level
+	directory that contains src/. If no src/ directory is found,
+	then GOPATH is set to the current working directory. This
+	makes it possible to use the same workspace from within its
+	subdirectories.
 
 	Example:
 
@@ -33,7 +35,7 @@ go, godoc, gofmt
 	    # runs foo.go under default hardcoded version of go
 	    go run foo.go
 
-gox
+    gox
 	Executes go for every GOOS and GOARCH listed, adds both
 	to -o option after the name of the program. Should be used
 	with a build argument only.
@@ -43,13 +45,12 @@ gox
 	    gox build -o foo foo.go
 	    gox 1.4.2 build -o foo142 foo.go
 
-
 AUTHOR
-	Alexandr Gomoliako <zzz@zzz.org.ua>
+    Alexandr Gomoliako <zzz@zzz.org.ua>
 
 LICENSE
-	Copyright 2015 Alexandr Gomoliako. All rights reserved.
+    Copyright 2015 Alexandr Gomoliako. All rights reserved.
 
-	This is free software. It may be used, redistributed and/or
-	modified under the terms described in LICENSE file.
+    This is free software. It may be used, redistributed and/or
+    modified under the terms described in LICENSE file.
 
