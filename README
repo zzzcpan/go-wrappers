@@ -3,7 +3,7 @@ NAME
     go-wrappers - set of wrappers for go
 
 DESCRIPTION
-    Wrappers for go to support multiple Go release version,
+    Wrappers for Go to support multiple Go release versions,
     cross-compilation and to improve usability.
 
 WRAPPERS
